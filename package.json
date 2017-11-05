@@ -4,7 +4,9 @@
     "version": "0.0.1",
     "private": true,
     "dependencies": {
+        "aws-serverless-express": "latest",
         "express": "latest",
-        "aws-serverless-express": "latest"
+        "request": "^2.83.0",
+        "twitter": "^1.7.1"
     }
 }
