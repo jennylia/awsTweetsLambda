@@ -11,14 +11,14 @@ var client = new Twitter({
 });
 
 app.get('/', function (req, res) {
-    // var params = {screen_name: 'awscloud'};
+    var params = {screen_name: 'awscloud'};
     var newTweet = {};
-    // client.get('statuses/user_timeline', params, function (error, tweets, response) {
-    //     if (!error) {
-    //         console.log(tweets[0].text);
-    //         newTweet = tweets[0].text;
-    //     }
-    // });
+    client.get('statuses/user_timeline', params, function (error, tweets, response) {
+        if (!error) {
+            console.log(tweets[0].text);
+            newTweet = tweets[0].text;
+        }
+    });
 
     res.send({
         "Output": newTweet
