@@ -17,12 +17,18 @@ app.get('/', function (req, res) {
         if (!error) {
             console.log(tweets[0].text);
             newTweet = tweets[0].text;
+
+            res.send({
+                "Output": newTweet
+            });
+        } else {
+            res.send({
+                "Output": "no tweets available"
+            });
         }
     });
 
-    res.send({
-        "Output": newTweet
-    });
+
 });
 
 app.post('/', function (req, res) {
