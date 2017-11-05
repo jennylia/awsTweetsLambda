@@ -4,10 +4,10 @@ var request = require('request'); // reference for simple GET request
 var Twitter = require('twitter');
 
 var client = new Twitter({
-    consumer_key: 'tGBKVCeM0FDXevfI1oXhYJ07l',
-    consumer_secret: 'Rc8t8Wi6c37STYb2LNH7CcsBpDdt43EIZLQ1t7AOLWDZejdcyk',
-    access_token_key: '2419944637-bHtuGboyXYfsF9JBkHdYddOaolygNutZwyipyYw',
-    access_token_secret: 'ZwInM3KJirA9s79RvkdiOtXxxgpbpM7cv6utKJT6vDzfT'
+    consumer_key: 'xl',
+    consumer_secret: 'djdcyk',
+    access_token_key: '2419944637-asd',
+    access_token_secret: 'asf'
 });
 
 app.get('/', function (req, res) {
